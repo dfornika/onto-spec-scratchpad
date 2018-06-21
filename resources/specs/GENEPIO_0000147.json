@@ -1,0 +1,1353 @@
+{
+  "specifications": {
+    "GENEPIO:0000147": {
+      "uiLabel": "NCBI SRA meta information standard",
+      "definition": "An NCBI SRA meta information item is a field specification for a NCBI Sequence Read Archive record.",
+      "components": [
+        {
+          "uiLabel": "sequencing platform (brand)",
+          "definition": "A sequencing plaform (brand) is a name of a company that produces sequencer equipment.",
+          "datatype": "xmls:anyURI",
+          "id": "GENEPIO:0000071",
+          "choices": [
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0000071",
+                "OBI:0000697"
+              ],
+              "definition": "is a DNA sequencing which allows sequence identification of billions of DNA molecules immobilized to a surface by using DNA polymerase and fluorescently labeled nucleotides added one at a time.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: HELICOS"
+              ],
+              "id": "OBI:0000697",
+              "uiLabel": "Helicos sequencing"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0000071",
+                "OBI:0000706"
+              ],
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: ABI_SOLID"
+              ],
+              "uiLabel": "SOLiD sequencing",
+              "id": "OBI:0000706"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0000071",
+                "ERO:0001642"
+              ],
+              "definition": "A next generation sequencing that monitors the incorporation of a nucleotide into a strand of DNA by sensing pH change from the release of a hydrogen ion corresponding to a bonding event.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: ION_TORRENT"
+              ],
+              "id": "ERO:0001642",
+              "uiLabel": "ion torrent next generation sequencing "
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0000071",
+                "GENEPIO:0001924"
+              ],
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: COMPLETE_GENOMICS"
+              ],
+              "uiLabel": "Complete Genomics platform",
+              "id": "GENEPIO:0001924"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0000071",
+                "GENEPIO:0001923"
+              ],
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: ILLUMINA"
+              ],
+              "uiLabel": "Illumina platform",
+              "id": "GENEPIO:0001923"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0000071",
+                "GENEPIO:0001927"
+              ],
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: PACBIO_SMRT"
+              ],
+              "uiLabel": "PacBio platform",
+              "id": "GENEPIO:0001927"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0000071",
+                "GENEPIO:0001926"
+              ],
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: LS454"
+              ],
+              "uiLabel": "Roche LS454 platform",
+              "id": "GENEPIO:0001926"
+            }
+          ],
+          "depth": 1,
+          "path": [
+            "GENEPIO:0000147",
+            "GENEPIO:0000071"
+          ],
+          "domId": "GENEPIO:0000147/GENEPIO:0000071",
+          "features": {},
+          "uiDefinition": "A sequencing plaform (brand) is a name of a company that produces sequencer equipment.",
+          "maxCardinality": 1
+        },
+        {
+          "uiLabel": "library source",
+          "definition": "The library source specifies the type of source material that is being sequenced.",
+          "datatype": "xmls:anyURI",
+          "id": "GENEPIO:0001965",
+          "choices": [
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001965",
+                "GENEPIO:0001966"
+              ],
+              "definition": "Genomic DNA (includes PCR products from genomic DNA).",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: GENOMIC"
+              ],
+              "id": "GENEPIO:0001966",
+              "uiLabel": "genomic source"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001965",
+                "GENEPIO:0001967"
+              ],
+              "definition": "Mixed material from metagenome.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: METAGENOMIC"
+              ],
+              "id": "GENEPIO:0001967",
+              "uiLabel": "metagenomic source"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001965",
+                "GENEPIO:0001968"
+              ],
+              "definition": "Transcription products from community targets",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: METATRANSCRIPTOMIC"
+              ],
+              "id": "GENEPIO:0001968",
+              "uiLabel": "metatranscriptomic source"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001965",
+                "GENEPIO:0001969"
+              ],
+              "definition": "Other, unspecified, or unknown library source material.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: OTHER"
+              ],
+              "id": "GENEPIO:0001969",
+              "uiLabel": "other library source"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001965",
+                "GENEPIO:0001970"
+              ],
+              "definition": "Synthetic DNA.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: SYNTHETIC"
+              ],
+              "id": "GENEPIO:0001970",
+              "uiLabel": "synthetic source"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001965",
+                "GENEPIO:0001971"
+              ],
+              "definition": "Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries).",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: TRANSCRIPTOMIC"
+              ],
+              "id": "GENEPIO:0001971",
+              "uiLabel": "transcriptomic source"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001965",
+                "GENEPIO:0001972"
+              ],
+              "definition": "Viral RNA.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: VIRAL RNA"
+              ],
+              "id": "GENEPIO:0001972",
+              "uiLabel": "viral RNA source"
+            }
+          ],
+          "depth": 1,
+          "path": [
+            "GENEPIO:0000147",
+            "GENEPIO:0001965"
+          ],
+          "domId": "GENEPIO:0000147/GENEPIO:0001965",
+          "features": {},
+          "uiDefinition": "The library source specifies the type of source material that is being sequenced.",
+          "maxCardinality": 1
+        },
+        {
+          "uiLabel": "library strategy",
+          "definition": "Sequencing technique intended for this library.",
+          "datatype": "xmls:anyURI",
+          "id": "GENEPIO:0001973",
+          "choices": [
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001975"
+              ],
+              "definition": "MethylC-seq.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: Bisulfite-Seq"
+              ],
+              "id": "GENEPIO:0001975",
+              "uiLabel": "Bisulfite-Seq strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001978"
+              ],
+              "definition": "Concatenated Tag Sequencing",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: CTS"
+              ],
+              "id": "GENEPIO:0001978",
+              "uiLabel": "CTS strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001979"
+              ],
+              "definition": "Direct sequencing of chromatin immunoprecipitates.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: ChIP-Seq"
+              ],
+              "id": "GENEPIO:0001979",
+              "uiLabel": "ChIP-Seq strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001980"
+              ],
+              "definition": "Sequencing of hypersensitive sites, or segments of open chromatin that are more readily cleaved by DNaseI.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: DNase-Hypersensitivity"
+              ],
+              "id": "GENEPIO:0001980",
+              "uiLabel": "DNase-Hypersensitivity strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001981"
+              ],
+              "definition": "Single pass sequencing of cDNA templates",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: EST"
+              ],
+              "id": "GENEPIO:0001981",
+              "uiLabel": "EST strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001983"
+              ],
+              "definition": "Full-length sequencing of cDNA templates",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: FL-cDNA"
+              ],
+              "id": "GENEPIO:0001983",
+              "uiLabel": "FL-cDNA strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001984"
+              ],
+              "definition": "Direct sequencing of methylated fractions sequencing strategy.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: MBD-Seq"
+              ],
+              "id": "GENEPIO:0001984",
+              "uiLabel": "MBD-Seq strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001985"
+              ],
+              "definition": "Direct sequencing following MNase digestion.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: MNase-Seq"
+              ],
+              "id": "GENEPIO:0001985",
+              "uiLabel": "MNase-Seq strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001986"
+              ],
+              "definition": "Methylation-Sensitive Restriction Enzyme Sequencing strategy.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: MRE-Seq"
+              ],
+              "id": "GENEPIO:0001986",
+              "uiLabel": "MRE-Seq strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001987"
+              ],
+              "definition": "Methylated DNA Immunoprecipitation Sequencing strategy.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: MeDIP-Seq"
+              ],
+              "id": "GENEPIO:0001987",
+              "uiLabel": "MeDIP-Seq strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001990"
+              ],
+              "definition": "Random sequencing of whole transcriptome.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: RNA-Seq"
+              ],
+              "id": "GENEPIO:0001990",
+              "uiLabel": "RNA-Seq strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001991"
+              ],
+              "definition": "Random sequencing of a whole chromosome or other replicon isolated from a genome.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: WCS"
+              ],
+              "id": "GENEPIO:0001991",
+              "uiLabel": "WCS strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001992"
+              ],
+              "definition": "Random sequencing of the whole genome.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: WGS"
+              ],
+              "id": "GENEPIO:0001992",
+              "uiLabel": "WGS strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001993"
+              ],
+              "definition": "Random sequencing of exonic regions selected from the genome.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: WXS"
+              ],
+              "id": "GENEPIO:0001993",
+              "uiLabel": "WXS strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001974"
+              ],
+              "definition": "Sequencing of overlapping or distinct PCR or RT-PCR products.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: AMPLICON"
+              ],
+              "id": "GENEPIO:0001974",
+              "uiLabel": "amplicon strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001976"
+              ],
+              "definition": "Clone end (5', 3', or both) sequencing.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: CLONEEND"
+              ],
+              "id": "GENEPIO:0001976",
+              "uiLabel": "clone end strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001977"
+              ],
+              "definition": "Genomic clone based (hierarchical) sequencing.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: CLONE"
+              ],
+              "id": "GENEPIO:0001977",
+              "uiLabel": "clone strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001982"
+              ],
+              "definition": "Sequencing intended to finish (close) gaps in existing coverage.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: FINISHING"
+              ],
+              "id": "GENEPIO:0001982",
+              "uiLabel": "finishing strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001988"
+              ],
+              "definition": "Library strategy not listed.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: OTHER"
+              ],
+              "id": "GENEPIO:0001988",
+              "uiLabel": "other library strategy"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001973",
+                "GENEPIO:0001989"
+              ],
+              "definition": "Shotgun of pooled clones (usually BACs and Fosmids).",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: POOLCLONE"
+              ],
+              "id": "GENEPIO:0001989",
+              "uiLabel": "pool clone strategy"
+            }
+          ],
+          "depth": 1,
+          "path": [
+            "GENEPIO:0000147",
+            "GENEPIO:0001973"
+          ],
+          "domId": "GENEPIO:0000147/GENEPIO:0001973",
+          "features": {},
+          "uiDefinition": "Sequencing technique intended for this library.",
+          "maxCardinality": 1
+        },
+        {
+          "uiLabel": "library name",
+          "definition": "The submitter's name for this library.",
+          "datatype": "xmls:string",
+          "hasDbXref": [
+            "NCBI SRA: LIBRARY_NAME"
+          ],
+          "id": "GENEPIO:0001995",
+          "depth": 1,
+          "path": [
+            "GENEPIO:0000147",
+            "GENEPIO:0001995"
+          ],
+          "domId": "GENEPIO:0000147/GENEPIO:0001995",
+          "features": {},
+          "uiDefinition": "The submitter's name for this library.",
+          "maxCardinality": 1
+        },
+        {
+          "uiLabel": "library construction protocol",
+          "definition": "Free form text describing the protocol by which the sequencing library was constructed.",
+          "datatype": "xmls:string",
+          "id": "GENEPIO:0001994",
+          "depth": 1,
+          "path": [
+            "GENEPIO:0000147",
+            "GENEPIO:0001994"
+          ],
+          "domId": "GENEPIO:0000147/GENEPIO:0001994",
+          "features": {},
+          "uiDefinition": "Free form text describing the protocol by which the sequencing library was constructed.",
+          "maxCardinality": 1
+        },
+        {
+          "uiLabel": "sequencing facility",
+          "definition": "An organization that provides sequence determination service",
+          "datatype": "xmls:anyURI",
+          "id": "OBI:0001891",
+          "label": "sequencing facility organization",
+          "depth": 1,
+          "path": [
+            "GENEPIO:0000147",
+            "OBI:0001891"
+          ],
+          "domId": "GENEPIO:0000147/OBI:0001891",
+          "features": {},
+          "uiDefinition": "An organization that provides sequence determination service",
+          "maxCardinality": 1
+        },
+        {
+          "uiLabel": "sequencing instrument model",
+          "definition": "A product name and model number of a manufacturer's genomic (dna) sequencer.",
+          "datatype": "xmls:anyURI",
+          "id": "GENEPIO:0001921",
+          "choices": [
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001921",
+                "OBI:0000696"
+              ],
+              "definition": "is a DNA sequencer which is manufactured by Applied Biosystems and which enable DNA sequencing by ligation",
+              "datatype": "xmls:anyURI",
+              "uiLabel": "AB SOLiD System",
+              "hasDbXref": [
+                "NCBI SRA: AB SOLiD System"
+              ],
+              "id": "OBI:0000696",
+              "choices": [
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "OBI:0000696",
+                    "OBI:0002007"
+                  ],
+                  "definition": "A DNA sequencer which is manufacted by the Applied Biosystems corporation.",
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: AB SOLiD 3 Plus System"
+                  ],
+                  "id": "OBI:0002007",
+                  "uiLabel": "SOLiD 3 Plus System"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "OBI:0000696",
+                    "OBI:0002024"
+                  ],
+                  "definition": "An AB SOLid System which is manufacted by the Applied Biosystems corporation.",
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: AB SOLiD 4 System"
+                  ],
+                  "id": "OBI:0002024",
+                  "uiLabel": "SOLiD 4 System"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "OBI:0000696",
+                    "GENEPIO:0001928"
+                  ],
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: AB SOLiD 4hq"
+                  ],
+                  "uiLabel": "SOLiD 4hq System",
+                  "id": "GENEPIO:0001928"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "OBI:0000696",
+                    "GENEPIO:0001929"
+                  ],
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: AB SOLiD 5500"
+                  ],
+                  "uiLabel": "SOLiD 5500",
+                  "id": "GENEPIO:0001929"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "OBI:0000696",
+                    "GENEPIO:0001930"
+                  ],
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: AB SOLiD 5500xl"
+                  ],
+                  "uiLabel": "SOLiD 5500xl",
+                  "id": "GENEPIO:0001930"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "OBI:0000696",
+                    "GENEPIO:0001931"
+                  ],
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: AB SOLiD PI System"
+                  ],
+                  "uiLabel": "SOLiD PI System",
+                  "id": "GENEPIO:0001931"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "OBI:0000696",
+                    "GENEPIO:0001932"
+                  ],
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: AB SOLiD System 2.0"
+                  ],
+                  "uiLabel": "SOLiD System 2.0",
+                  "id": "GENEPIO:0001932"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "OBI:0000696",
+                    "GENEPIO:0001933"
+                  ],
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: AB SOLiD System 3.0"
+                  ],
+                  "uiLabel": "SOLiD System 3.0",
+                  "id": "GENEPIO:0001933"
+                }
+              ]
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001921",
+                "OBI:0000717"
+              ],
+              "definition": "is a DNA sequencer manufacturer by Helicos Corporation to carry out Single Molecule sequencing using reversible termination chemistry",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: Helicos HeliScope"
+              ],
+              "id": "OBI:0000717",
+              "uiLabel": "HeliScope Single Molecule Sequencer"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001921",
+                "OBI:0000703"
+              ],
+              "definition": "is a DNA sequence which is manufactured by Illumina (Solexa) corporation.",
+              "datatype": "xmls:anyURI",
+              "uiLabel": "Illumina Genome Analyzer II",
+              "hasDbXref": [
+                "NCBI SRA: Illumina Genome Analyzer II"
+              ],
+              "id": "OBI:0000703",
+              "choices": [
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "OBI:0000703",
+                    "OBI:0002027"
+                  ],
+                  "definition": "An Illumina Genome Analyzer II which is manufactured by the Illumina corporation.",
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: Illumina Genome Analyzer IIe"
+                  ],
+                  "id": "OBI:0002027",
+                  "uiLabel": "Genome Analyzer IIe"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "OBI:0000703",
+                    "OBI:0002000"
+                  ],
+                  "definition": "An Illumina Genome Analyzer II which is manufactured by the Illumina corporation.",
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: Illumina Genome Analyzer IIx"
+                  ],
+                  "id": "OBI:0002000",
+                  "uiLabel": "Genome Analyzer IIx"
+                }
+              ]
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001921",
+                "OBI:0002003"
+              ],
+              "definition": "A DNA sequencer which is manufactured by the Illumina corporation.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: Illumina MiSeq"
+              ],
+              "id": "OBI:0002003",
+              "uiLabel": "MiSeq"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001921",
+                "OBI:0002021"
+              ],
+              "definition": "A DNA sequencer which is a desktop sequencer ideal for smaller-scale studies manufactured by the Illumina corporation.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: Illumina NextSeq"
+              ],
+              "id": "OBI:0002021",
+              "uiLabel": "NextSeq 500"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001921",
+                "OBI:0002012"
+              ],
+              "definition": "A DNA sequencer which is manufactured by the Pacific Biosciences corporation.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: PacBio RS"
+              ],
+              "id": "OBI:0002012",
+              "uiLabel": "PacBio RS II"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001921",
+                "GENEPIO:0001937"
+              ],
+              "datatype": "xmls:anyURI",
+              "uiLabel": "454 Genome Sequencer",
+              "hasDbXref": [
+                "NCBI SRA: 454 GS"
+              ],
+              "id": "GENEPIO:0001937",
+              "choices": [
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "GENEPIO:0001937",
+                    "OBI:0000689"
+                  ],
+                  "definition": "is a DNA sequencer which is manufactured by 454 Life Science Corporation and enables pyrosequencing to be performed.",
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: 454 GS 20"
+                  ],
+                  "id": "OBI:0000689",
+                  "uiLabel": "454 Genome Sequence 20"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "GENEPIO:0001937",
+                    "OBI:0000702"
+                  ],
+                  "definition": "is a DNA sequencer which is manufactured by 454 Life Science Corporation and enables pyrosequencing to be performed.",
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: 454 GS FLX"
+                  ],
+                  "id": "OBI:0000702",
+                  "uiLabel": "454 Genome Sequencer FLX"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "GENEPIO:0001937",
+                    "GENEPIO:0001936"
+                  ],
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: 454 GS FLX Titanium"
+                  ],
+                  "uiLabel": "454 Genome Sequencer FLX Titanium",
+                  "id": "GENEPIO:0001936"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "GENEPIO:0001937",
+                    "GENEPIO:0001938"
+                  ],
+                  "datatype": "xmls:anyURI",
+                  "hasDbXref": [
+                    "NCBI SRA: 454 GS Junior"
+                  ],
+                  "uiLabel": "454 Genome Sequencer Junior",
+                  "id": "GENEPIO:0001938"
+                }
+              ]
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001921",
+                "GENEPIO:0001939"
+              ],
+              "datatype": "xmls:anyURI",
+              "uiLabel": "Illumina HiSeq Sequencer",
+              "id": "GENEPIO:0001939",
+              "choices": [
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "GENEPIO:0001939",
+                    "OBI:0002022"
+                  ],
+                  "definition": "A DNA sequencer which is manufactured by the Illumina corporation, with a single flow cell and a throughput of up to 35 Gb per day.",
+                  "datatype": "xmls:anyURI",
+                  "id": "OBI:0002022",
+                  "uiLabel": "Illumina HiSeq 1000"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "GENEPIO:0001939",
+                    "OBI:0002001"
+                  ],
+                  "definition": "A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and a throughput of up to 55 Gb per day.",
+                  "datatype": "xmls:anyURI",
+                  "id": "OBI:0002001",
+                  "uiLabel": "Illumina HiSeq 2000"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "GENEPIO:0001939",
+                    "OBI:0002002"
+                  ],
+                  "definition": "A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and a throughput of up to 160 Gb per day.",
+                  "datatype": "xmls:anyURI",
+                  "id": "OBI:0002002",
+                  "uiLabel": "Illumina HiSeq 2500"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "GENEPIO:0001939",
+                    "OBI:0002048"
+                  ],
+                  "definition": "A DNA sequencer manufactured by Illumina corporation, with a single flow cell and a throughput of more than 200 Gb per day.",
+                  "datatype": "xmls:anyURI",
+                  "id": "OBI:0002048",
+                  "uiLabel": "Illumina HiSeq 3000"
+                },
+                {
+                  "path": [
+                    "GENEPIO:0000147",
+                    "GENEPIO:0001921",
+                    "GENEPIO:0001939",
+                    "OBI:0002049"
+                  ],
+                  "definition": "A DNA sequencer manufactured by Illumina corporation, with two flow cell and a throughput of more than 400 Gb per day.",
+                  "datatype": "xmls:anyURI",
+                  "id": "OBI:0002049",
+                  "uiLabel": "Illumina HiSeq 4000"
+                }
+              ]
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001921",
+                "GENEPIO:0001935"
+              ],
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: Ion Torrent PGM"
+              ],
+              "uiLabel": "Ion Torrent PGM",
+              "id": "GENEPIO:0001935"
+            }
+          ],
+          "depth": 1,
+          "path": [
+            "GENEPIO:0000147",
+            "GENEPIO:0001921"
+          ],
+          "domId": "GENEPIO:0000147/GENEPIO:0001921",
+          "features": {},
+          "uiDefinition": "A product name and model number of a manufacturer's genomic (dna) sequencer.",
+          "maxCardinality": 1
+        },
+        {
+          "uiLabel": "library selection",
+          "definition": "Whether any method was used to select for or against, enrich, or screen the material being sequenced.",
+          "datatype": "xmls:anyURI",
+          "hasDbXref": [
+            "NCBI SRA: LIBRARY_SELECTION"
+          ],
+          "id": "GENEPIO:0001940",
+          "choices": [
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001941"
+              ],
+              "definition": "Selection of methylated DNA fragments using an antibody raised against 5-methylcytosine or 5-methylcytidine (m5C).",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: 5-methylcytidine antibody"
+              ],
+              "id": "GENEPIO:0001941",
+              "uiLabel": "5-methylcytidine antibody method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001942"
+              ],
+              "definition": "Cap-analysis gene expression.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: CAGE"
+              ],
+              "id": "GENEPIO:0001942",
+              "uiLabel": "CAGE method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001943"
+              ],
+              "definition": "Cot-filtered highly repetitive genomic DNA",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: CF-H"
+              ],
+              "id": "GENEPIO:0001943",
+              "uiLabel": "CF-H method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001944"
+              ],
+              "definition": "Cot-filtered moderately repetitive genomic DNA",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: CF-M"
+              ],
+              "id": "GENEPIO:0001944",
+              "uiLabel": "CF-M method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001945"
+              ],
+              "definition": "Cot-filtered single/low-copy genomic DNA",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: CF-S"
+              ],
+              "id": "GENEPIO:0001945",
+              "uiLabel": "CF-S method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001946"
+              ],
+              "definition": "Cot-filtered theoretical single-copy genomic DNA",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: CF-T"
+              ],
+              "id": "GENEPIO:0001946",
+              "uiLabel": "CF-T method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001947"
+              ],
+              "definition": "Chromatin immunoprecipitation",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: ChIP"
+              ],
+              "id": "GENEPIO:0001947",
+              "uiLabel": "ChIP method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001948"
+              ],
+              "definition": "Deoxyribonuclease (MNase) digestion",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: DNAse"
+              ],
+              "id": "GENEPIO:0001948",
+              "uiLabel": "DNAse method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001949"
+              ],
+              "definition": "Hypo-methylated partial restriction digest",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: HMPR"
+              ],
+              "id": "GENEPIO:0001949",
+              "uiLabel": "HMPR method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001950"
+              ],
+              "definition": "Selection by hybridization in array or solution.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: Hybrid Selection"
+              ],
+              "id": "GENEPIO:0001950",
+              "uiLabel": "Hybrid Selection method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001951"
+              ],
+              "definition": "Enrichment by methyl-CpG binding domain.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: MBD2 protein methyl-CpG binding domain"
+              ],
+              "id": "GENEPIO:0001951",
+              "uiLabel": "MBD2 protein methyl-CpG binding domain method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001952"
+              ],
+              "definition": "Methyl Filtrated",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: MF"
+              ],
+              "id": "GENEPIO:0001952",
+              "uiLabel": "MF method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001953"
+              ],
+              "definition": "Micrococcal Nuclease (MNase) digestion",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: MNase"
+              ],
+              "id": "GENEPIO:0001953",
+              "uiLabel": "MNase method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001954"
+              ],
+              "definition": "Methylation Spanning Linking Library",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: MSLL"
+              ],
+              "id": "GENEPIO:0001954",
+              "uiLabel": "MSLL method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001955"
+              ],
+              "definition": "Source material was selected by designed primers.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: PCR"
+              ],
+              "id": "GENEPIO:0001955",
+              "uiLabel": "PCR method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001956"
+              ],
+              "definition": "Rapid Amplification of cDNA Ends.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: RACE"
+              ],
+              "id": "GENEPIO:0001956",
+              "uiLabel": "RACE method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001957"
+              ],
+              "definition": "Source material was selected by randomly generated primers.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: RANDOM PCR"
+              ],
+              "id": "GENEPIO:0001957",
+              "uiLabel": "RANDOM PCR method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001958"
+              ],
+              "definition": "Random selection by shearing or other method.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: RANDOM"
+              ],
+              "id": "GENEPIO:0001958",
+              "uiLabel": "RANDOM method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001959"
+              ],
+              "definition": "Source material was selected by reverse transcription PCR",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: RT-PCR"
+              ],
+              "id": "GENEPIO:0001959",
+              "uiLabel": "RT-PCR method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001960"
+              ],
+              "definition": "Reproducible genomic subsets, often generated by restriction fragment size selection, containing a manageable number of loci to facilitate re-sampling.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: Reduced Representation"
+              ],
+              "id": "GENEPIO:0001960",
+              "uiLabel": "Reduced Representation method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001961"
+              ],
+              "definition": "DNA fractionation using restriction enzymes.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: Restriction Digest"
+              ],
+              "id": "GENEPIO:0001961",
+              "uiLabel": "Restriction Digest method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001962"
+              ],
+              "definition": "PolyA selection or enrichment for messenger RNA (mRNA).",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: cDNA"
+              ],
+              "id": "GENEPIO:0001962",
+              "uiLabel": "cDNA method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001964"
+              ],
+              "definition": "Other library enrichment, screening, or selection process.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: other"
+              ],
+              "id": "GENEPIO:0001964",
+              "uiLabel": "other library method"
+            },
+            {
+              "path": [
+                "GENEPIO:0000147",
+                "GENEPIO:0001940",
+                "GENEPIO:0001963"
+              ],
+              "definition": "Physical selection of size appropriate targets.",
+              "datatype": "xmls:anyURI",
+              "hasDbXref": [
+                "NCBI SRA: size fractionation"
+              ],
+              "id": "GENEPIO:0001963",
+              "uiLabel": "size fractionation method"
+            }
+          ],
+          "depth": 1,
+          "path": [
+            "GENEPIO:0000147",
+            "GENEPIO:0001940"
+          ],
+          "domId": "GENEPIO:0000147/GENEPIO:0001940",
+          "features": {},
+          "uiDefinition": "Whether any method was used to select for or against, enrich, or screen the material being sequenced.",
+          "maxCardinality": 1
+        }
+      ],
+      "datatype": "model",
+      "id": "GENEPIO:0000147",
+      "depth": 0,
+      "path": [
+        "GENEPIO:0000147"
+      ],
+      "domId": "GENEPIO:0000147",
+      "features": {},
+      "uiDefinition": "An NCBI SRA meta information item is a field specification for a NCBI Sequence Read Archive record."
+    }
+  }
+}
